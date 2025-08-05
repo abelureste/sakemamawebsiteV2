@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import sakemamalogo from '../src/assets/sakeMAMAbombath.png'
 
 // =================================================================
 // FILE: Navbar.js
@@ -73,7 +74,7 @@ const Navbar = () => {
           {/* Centered Logo */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <a href="#" className="text-2xl font-bold">
-                <img src='../src/assets/sakeMAMAbombath.png' className='w-48 md:w-72'></img> {/* Responsive width */}
+                <img src={sakemamalogo} className='w-48 md:w-72'></img> {/* Responsive width */}
             </a>
           </div>
 

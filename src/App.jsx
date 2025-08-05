@@ -1,11 +1,14 @@
-import { motion } from 'framer-motion';
-import Navbar from "../components/Navbar";
-import Ticker from "../components/Ticker";
-import TickerBeer from '../components/TickerBeer';
-import AuroraBackground from "../components/AuroraBackground";
-import ImageCarousel from "../components/ImageCarousel";
-import ImageGrid from "../components/ImageGrid";
-import WavyText from '../components/WavyText';
+import { motion } from 'framer-motion'
+import Navbar from "../components/Navbar"
+import Ticker from "../components/Ticker"
+import TickerBeer from '../components/TickerBeer'
+import AuroraBackground from "../components/AuroraBackground"
+import ImageCarousel from "../components/ImageCarousel"
+import ImageGrid from "../components/ImageGrid"
+import WavyText from '../components/WavyText'
+
+import sakemamadrinks from "../src/assets/sakemamadrinksmobile.png"
+import sakemamaround from "../src/assets/sakeMamaProfilePic.png"
 
 import sakemenu1 from "../src/assets/sakemenu1.png"
 import sakemenu2 from "../src/assets/sakemenu2.png"
@@ -60,7 +63,7 @@ function App() {
                   stiffness: 300,
                 }}
               >
-              <img src="../src/assets/sakemamadrinksmobile.png" className="rounded-xl"></img>
+              <img src={sakemamadrinks} className="rounded-xl"></img>
             </motion.div>
           </div>
           <div>
@@ -96,7 +99,7 @@ function App() {
         {/* Contact card */}
         <div id='contact' className="container mx-auto p-8 m-8 md:flex md:items-center md:justify-center rounded-xl">
           <div className="p-4 flex-shrink-0">
-            <img src="../src/assets/sakeMamaProfilePic.png" className="max-w-60 mx-auto"></img>
+            <img src={sakemamaround} className="max-w-60 mx-auto"></img>
           </div>
           <div className="text-center md:text-left md:ml-8">
             <h1 className="md:text-6xl sm:text-4xl font-bold text-white">Get in touch.</h1>
