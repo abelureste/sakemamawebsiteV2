@@ -22,23 +22,23 @@ import bomb17 from '../src/assets/bomb17.png'
 
 // The array of items you want to display in the ticker
 const tickerItems = [
-    { src: bomb1, alt: "Sake Bomb 1" },
-    { src: bomb2, alt: "Sake Bomb 1" },
-    { src: bomb3, alt: "Sake Bomb 1" },
-    { src: bomb4, alt: "Sake Bomb 1" },
-    { src: bomb5, alt: "Sake Bomb 1" },
-    { src: bomb6, alt: "Sake Bomb 1" },
-    { src: bomb7, alt: "Sake Bomb 1" },
-    { src: bomb8, alt: "Sake Bomb 1" },
-    { src: bomb9, alt: "Sake Bomb 1" },
-    { src: bomb10, alt: "Sake Bomb 1" },
-    { src: bomb11, alt: "Sake Bomb 1" },
-    { src: bomb12, alt: "Sake Bomb 1" },
-    { src: bomb13, alt: "Sake Bomb 1" },
-    { src: bomb14, alt: "Sake Bomb 1" },
-    { src: bomb15, alt: "Sake Bomb 1" },
-    { src: bomb16, alt: "Sake Bomb 1" },
-    { src: bomb17, alt: "Sake Bomb 1" },
+    { src: bomb1, alt: "Cokeholic" },
+    { src: bomb2, alt: "Sunrise" },
+    { src: bomb3, alt: "Mango Tango" },
+    { src: bomb4, alt: "Mean Girls" },
+    { src: bomb5, alt: "Dawgs Gold" },
+    { src: bomb6, alt: "Georgia Peach" },
+    { src: bomb7, alt: "Waikiki Bomb" },
+    { src: bomb8, alt: "Mystery White" },
+    { src: bomb9, alt: "Diet Green T" },
+    { src: bomb10, alt: "Cranberry" },
+    { src: bomb11, alt: "Shark Attack" },
+    { src: bomb12, alt: "Sake Mama" },
+    { src: bomb13, alt: "Snow White" },
+    { src: bomb14, alt: "Bullseye" },
+    { src: bomb15, alt: "Sakerita" },
+    { src: bomb16, alt: "Kamikaze" },
+    { src: bomb17, alt: "Hot Tox" },
 ];
 
 const Ticker = () => {
@@ -52,7 +52,7 @@ const Ticker = () => {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 5, // Adjust duration for speed
+          duration: 50, // Increased duration for a smoother, slower scroll
           ease: "linear",
         },
       },
@@ -60,14 +60,14 @@ const Ticker = () => {
   };
 
   return (
-    <div className="w-full backdrop-blur-2xl py-3 overflow-hidden">
+    <div className="w-full flex backdrop-blur-2xl overflow-hidden">
       <motion.div
-        className="flex whitespace-nowrap items-center gap-8" // Use gap for consistent spacing
+        className="flex whitespace-nowrap items-center gap-8"
         variants={tickerVariants}
         animate="animate"
       >
         {extendedItems.map((item, index) => (
-          <div key={index} className="flex-shrink-0 w-80"> {/* Use a fixed width */}
+          <div key={index} className="flex-shrink-0 w-80">
             <img src={item.src} alt={item.alt} className="w-full h-auto" />
           </div>
         ))}

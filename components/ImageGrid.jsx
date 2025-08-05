@@ -8,6 +8,9 @@ import sakeimg4 from "../src/assets/sakeimg4.JPG"
 import sakeimg5 from "../src/assets/sakeimg5.JPG"
 import sakeimg6 from "../src/assets/sakeimg6.JPG"
 
+import sakedance from "../src/assets/sakedance.gif"
+import sakedance2 from "../src/assets/sakedance2.gif"
+
 // A reusable component for each grid item with its own animation logic
 const GridItem = ({ src, alt, id }) => {
   // Animation variants for Framer Motion. This defines *how* the item animates.
@@ -44,12 +47,12 @@ const GridItem = ({ src, alt, id }) => {
 const ImageGrid = () => {
   // Array of image data for the grid.
   const images = [
-    { id: 1, src: sakeimg1 },
+    { id: 1, src: sakedance },
     { id: 2, src: sakeimg2 },
-    { id: 3, src: sakeimg3 },
+    { id: 3, src: sakeimg6 },
     { id: 4, src: sakeimg4 },
     { id: 5, src: sakeimg5 },
-    { id: 6, src: sakeimg6 },
+    { id: 6, src: sakedance2 },
   ];
   // Ref to track when the grid itself is in view.
   const ref = useRef(null);

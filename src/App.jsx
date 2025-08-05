@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Navbar from "../components/Navbar";
 import Ticker from "../components/Ticker";
+import TickerBeer from '../components/TickerBeer';
 import AuroraBackground from "../components/AuroraBackground";
 import ImageCarousel from "../components/ImageCarousel";
 import ImageGrid from "../components/ImageGrid";
@@ -17,6 +18,8 @@ import sakeimg4 from "../src/assets/sakeimg4.JPG"
 import sakeimg5 from "../src/assets/sakeimg5.JPG"
 import sakeimg6 from "../src/assets/sakeimg6.JPG"
 
+import sakedance from "../src/assets/sakedance.gif"
+
 function App() {
   const carouselImages = [
     sakemenu1,
@@ -25,7 +28,7 @@ function App() {
   ]
 
   const gridImages = [
-    sakeimg1,
+    sakedance,
     sakeimg2,
     sakeimg3,
     sakeimg4,
@@ -76,6 +79,7 @@ function App() {
             <ImageCarousel images={carouselImages}/>     
           </div>
         </div>
+        <TickerBeer/>
 
         {/* Images card */}
         <div className="container mx-auto p-8 md:p-12 rounded-xl mt-8">
@@ -93,7 +97,7 @@ function App() {
           </div>
           <div>
             <h1 className="md:text-6xl sm:text-4xl font-bold text-white lg:pr-32 lg:pt-12">Get in touch.</h1>
-            <p className="mt-4 text-2xl text-white lg:pr-40">DM us on <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1'>Instagram</a>!<br/> 166 E Clayton St, Athens, GA 30601<br/> Check our <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1'>Instagram</a> for our opening times!</p>            
+            <p className="mt-4 text-2xl text-white lg:pr-40">166 E Clayton St, Athens, GA 30601<br/>Check our <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1'>Instagram</a> for our opening times!<br/> DM us on <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1'>Instagram</a> for general questions.<br/> Click <a href='https://docs.google.com/forms/d/e/1FAIpQLSfZmFS8f_d88U39bNEBB6-zOZGrTqwhinPYl-MO-m7bGRsFcw/viewform' className='text-decoration-line: underline decoration-1'>here</a> for a job inquiry, or <a href='https://docs.google.com/forms/d/e/1FAIpQLSclflhXo9tAGkcrq4dFi8e8T-zM-Zys0TrhHiFK8AO1ath3BQ/viewform' className='text-decoration-line: underline decoration-1'>here</a> for private events.</p>            
           </div>
         </div>
 
