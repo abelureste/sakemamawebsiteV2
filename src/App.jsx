@@ -35,11 +35,11 @@ function App() {
 
   return (
     
-      <div className="bg-black">
+      <div className="bg-black relative">
+        <AuroraBackground/>
         <Navbar />
         
         {/* Main card */}
-        <AuroraBackground/>
         <div className="container mx-auto p-8 sm:columns-2 bg-black rounded-xl">
           <div className="p-4 lg:pl-32">
              <motion.div
@@ -67,7 +67,7 @@ function App() {
 
         {/* Menu card */}
         <Ticker/>
-        <div className="container mx-auto p-8 sm:columns-2 bg-gray-700 rounded-xl">
+        <div className="container mx-auto p-8 sm:columns-2 bg-black rounded-xl">
           <div className="p-4 lg:pl-32 text-end">
             <h1 className="md:text-6xl sm:text-4xl font-bold text-white lg:pt-32">Take a look at our signature menu.</h1>
             <p className="mt-4 text-2xl text-white">We frequently run weekly specials.</p>    
@@ -78,7 +78,7 @@ function App() {
         </div>
 
         {/* Images card */}
-        <div className="container mx-auto p-8 md:p-12 bg-gray-700 backdrop-blur-lg rounded-xl mt-8 border border-white/10">
+        <div className="container mx-auto p-8 md:p-12 rounded-xl mt-8">
             <div className="text-center mb-8">
                 <WavyText text="Take a Glimpse Into Our Bar" className="md:text-6xl sm:text-4xl font-bold text-white"/>
             </div>
@@ -87,7 +87,7 @@ function App() {
         </div>
 
         {/* Contact card */}
-        <div className="container mx-auto p-8 m-8 sm:columns-2 bg-gray-700 rounded-xl">
+        <div className="container mx-auto p-8 m-8 sm:columns-2 rounded-xl">
           <div className="p-4 flex justify-end">
             <img src="../src/assets/sakeMamaProfilePic.png" className="max-w-60"></img>
           </div>
@@ -98,7 +98,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="bg-gray-800 text-gray-400 py-6 mt-8">
+        <footer className="backdrop-blur-2xl text-gray-200 py-6 mt-8">
           <div className="container mx-auto text-center">
             <p>&copy; 2025 Sake Mama. All Rights Reserved.</p>
             <p className="text-sm mt-1">Designed by Abel Ureste</p>
