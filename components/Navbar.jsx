@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+
 
 // =================================================================
 // FILE: Navbar.js
@@ -45,19 +47,18 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '#', label: 'Home' },
-    { href: '#', label: 'Features' },
-    { href: '#', label: 'Pricing' },
-    { href: '#', label: 'About' },
+    { href: '#menu', label: 'Menu' },
+    { href: '#images', label: 'Images' },
+    { href: '#contact', label: 'Contact' },
   ];
 
   return (
     <nav className="relative">
-      <div className="container mx-auto px-6 py-6 h-72">
+      <div className="container mx-auto px-6 py-6 h-48 md:h-72"> {/* Adjusted height for mobile */}
         <div className="flex items-center justify-between h-full">
           
           {/* Left-aligned navigation links for desktop */}
-          <div className="hidden md:flex items-center colo space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -70,17 +71,17 @@ const Navbar = () => {
           </div>
 
           {/* Centered Logo */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 max-w-1/5">
-            <a href="#" className="text-2xl font-bold drop-shadow-sm drop-shadow-white">
-                <img src='../src/assets/sakeMAMAbombath.png' className='max-w-md'></img>
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <a href="#" className="text-2xl font-bold">
+                <img src='../src/assets/sakeMAMAbombath.png' className='w-48 md:w-72'></img> {/* Responsive width */}
             </a>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center z-50">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-blue-600 focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
@@ -88,29 +89,29 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu - Dropdown */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <div className="flex flex-col items-center space-y-4 py-4">
+      {/* Mobile Menu - Full Screen Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden fixed inset-0 bg-black bg-opacity-95 z-40 flex flex-col items-center justify-center space-y-8"
+          >
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                className="text-white text-4xl font-bold hover:text-gray-400 transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="#"
-              className="w-11/12 text-center px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-300"
-            >
-              Get Started
-            </a>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

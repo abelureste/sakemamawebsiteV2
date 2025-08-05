@@ -44,15 +44,15 @@ const TickerBeer = () => {
     },
   };
 
-  return (
+ return (
     <div className="w-full flex backdrop-blur-2xl overflow-hidden">
       <motion.div
-        className="flex whitespace-nowrap items-center gap-8"
+        className="flex whitespace-nowrap items-center gap-4 md:gap-8" // Smaller gap on mobile
         variants={tickerVariants}
         animate="animate"
       >
         {extendedItems.map((item, index) => (
-          <div key={index} className="flex-shrink-0 w-80">
+          <div key={index} className="flex-shrink-0 w-48 md:w-80"> {/* Smaller width on mobile */}
             <img src={item.src} alt={item.alt} className="w-full h-auto" />
           </div>
         ))}
