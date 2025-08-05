@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Centered Logo */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <a href="#" className="text-2xl font-bold">
-                <img src={sakemamalogo} className='w-48 md:w-72'></img> {/* Responsive width */}
+                <img src={sakemamalogo} className='w-48 md:w-72 '></img> {/* Responsive width */}
             </a>
           </div>
 
