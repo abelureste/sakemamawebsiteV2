@@ -7,7 +7,7 @@ import ImageCarousel from "../components/ImageCarousel"
 import ImageGrid from "../components/ImageGrid"
 import WavyText from '../components/WavyText'
 
-import sakemamadrinks from "../src/assets/sakemamadrinksmobile.png"
+import sakemamadrinks from "../src/assets/sakeMAMAdrinksmobile.png"
 import sakemamaround from "../src/assets/sakeMamaProfilePic.png"
 
 import sakemenu1 from "../src/assets/sakemenu1.png"
