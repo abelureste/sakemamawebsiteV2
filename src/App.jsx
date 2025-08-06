@@ -2,10 +2,8 @@ import { motion } from 'framer-motion'
 import Navbar from "../components/Navbar"
 import Ticker from "../components/Ticker"
 import TickerBeer from '../components/TickerBeer'
-import AuroraBackground from "../components/AuroraBackground"
 import ImageCarousel from "../components/ImageCarousel"
 import ImageGrid from "../components/ImageGrid"
-import WavyText from '../components/WavyText'
 
 import sakemamadrinks from "../src/assets/sakeMAMAdrinksmobile.png"
 import sakemamaround from "../src/assets/sakeMamaProfilePic.png"
@@ -14,12 +12,10 @@ import sakemenu1 from "../src/assets/sakemenu1.png"
 import sakemenu2 from "../src/assets/sakemenu2.png"
 import sakemenu3 from "../src/assets/sakemenu3.png"
 
-import sakeimg1 from "../src/assets/sakeimg1.JPG"
 import sakeimg2 from "../src/assets/sakeimg2.JPG"
 import sakeimg3 from "../src/assets/sakeimg3.JPG"
 import sakeimg4 from "../src/assets/sakeimg4.JPG"
 import sakeimg5 from "../src/assets/sakeimg5.JPG"
-import sakeimg6 from "../src/assets/sakeimg6.JPG"
 
 import sakedance from "../src/assets/sakedance.gif"
 import sakedance2 from "../src/assets/sakedance2.gif"
@@ -42,8 +38,8 @@ function App() {
 
   return (
     
-      <div className="bg-black relative">
-        <AuroraBackground/>
+      <div className="relative">
+        <div className='aurora-background'/>
         <Navbar />
         
         {/* Main card */}
@@ -90,7 +86,7 @@ function App() {
         {/* Images card */}
         <div id='images' className="container mx-auto p-8 md:p-12 rounded-xl mt-8">
             <div className="text-center mb-8">
-                <WavyText text="Glimpse Into Our Bar" className="text-2xl sm:text-4xl md:text-6xl font-bold text-white"/>
+                <p className="text-2xl sm:text-4xl md:text-6xl font-bold text-white"> Glimpse inside</p>
             </div>
             
             <ImageGrid images={gridImages} />
@@ -108,7 +104,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <footer className="backdrop-blur-2xl text-gray-200 py-6 mt-8">
+        <footer className=" text-gray-200 py-6 mt-8">
           <div className="container mx-auto text-center">
             <p>&copy; 2025 Sake Mama. All Rights Reserved.</p>
             <p className="text-sm mt-1">Designed by Abel Ureste</p>

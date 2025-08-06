@@ -45,7 +45,7 @@ const TickerBeer = () => {
   };
 
  return (
-    <div className="w-full flex backdrop-blur-2xl overflow-hidden">
+    <div className="w-full flex overflow-hidden">
       <motion.div
         className="flex whitespace-nowrap items-center gap-4 md:gap-8" // Smaller gap on mobile
         variants={tickerVariants}
