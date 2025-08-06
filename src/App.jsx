@@ -86,7 +86,7 @@ function App() {
         {/* Images card */}
         <div id='images' className="container mx-auto p-8 md:p-12 rounded-xl mt-8">
             <div className="text-center mb-8">
-                <p className="text-2xl sm:text-4xl md:text-6xl font-bold text-white"> Glimpse inside</p>
+                <p className="text-2xl sm:text-4xl md:text-6xl font-bold text-white"> Glimpse inside.</p>
             </div>
             
             <ImageGrid images={gridImages} />

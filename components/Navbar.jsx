@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative">
-      <div className="container mx-auto px-6 py-6 h-48 md:h-72"> {/* Adjusted height for mobile */}
+      <div className="container mx-auto px-6 py-6 h-32 sm:h-48 lg:h-72"> {/* Adjusted height for mobile */}
         <div className="flex items-center justify-between h-full">
           
           {/* Left-aligned navigation links for desktop */}
@@ -64,7 +64,7 @@ const Navbar = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-white hover:text-gray-400 transition-colors duration-300"
+                className="text-white hover:text-gray-400 md:text-md lg:text-xl transition-colors duration-300"
               >
                 {link.label}
               </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Centered Logo */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <a href="#" className="text-2xl font-bold">
-                <img src={sakemamalogo} className='w-48 md:w-72 drop-shadow-sm drop-shadow-gray-400'></img> {/* Responsive width */}
+                <img src={sakemamalogo} className='w-56 md:w-72 lg:w-96 drop-shadow-sm drop-shadow-gray-400'></img> {/* Responsive width */}
             </a>
           </div>
 
