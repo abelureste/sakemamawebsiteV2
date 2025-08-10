@@ -98,13 +98,13 @@ function App() {
             <img src={sakemamaround} className="max-w-60 mx-auto"></img>
           </div>
           <div className="text-center md:text-left md:ml-8">
-            <h1 className="md:text-6xl sm:text-4xl font-bold text-white">Get in touch.</h1>
-            <p className="mt-4 text-2xl text-white">166 E Clayton St, Athens, GA 30601<br/>Check our <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>Instagram</a> for our opening times!<br/> DM us on <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>Instagram</a> for general questions.<br/> Click <a href='https://docs.google.com/forms/d/e/1FAIpQLSfZmFS8f_d88U39bNEBB6-zOZGrTqwhinPYl-MO-m7bGRsFcw/viewform' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>here</a> for a job inquiry, or <a href='https://docs.google.com/forms/d/e/1FAIpQLSclflhXo9tAGkcrq4dFi8e8T-zM-Zys0TrhHiFK8AO1ath3BQ/viewform' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>here</a> for private events.</p>
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">Get in touch.</h1>
+            <p className="mt-4 text-lg sm:text-2xl text-white">166 E Clayton St, Athens, GA 30601<br/>Check our <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>Instagram</a> for our opening times!<br/> DM us on <a href='https://www.instagram.com/sakemamauga/?hl=en' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>Instagram</a> for general questions.<br/> Click <a href='https://docs.google.com/forms/d/e/1FAIpQLSfZmFS8f_d88U39bNEBB6-zOZGrTqwhinPYl-MO-m7bGRsFcw/viewform' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>here</a> for a job inquiry, or <a href='https://docs.google.com/forms/d/e/1FAIpQLSclflhXo9tAGkcrq4dFi8e8T-zM-Zys0TrhHiFK8AO1ath3BQ/viewform' className='text-decoration-line: underline decoration-1 hover:text-gray-400 transition-colors duration-300'>here</a> for private events.</p>
           </div>
         </div>
 
         {/* Footer */}
-        <footer className=" text-gray-200 py-6 mt-8">
+        <footer className="text-gray-200 py-6 mt-8">
           <div className="container mx-auto text-center">
             <p>&copy; 2025 Sake Mama. All Rights Reserved.</p>
             <p className="text-sm mt-1">Designed by Abel Ureste</p>
